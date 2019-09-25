@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: testdb
+    password:
+    initialization-mode: always
+  jpa:
+    database: h2
+  h2:
+    console:
+      enabled: true
+      path: /testdb
+app:
+  jwtSecret: JWTSuperSecretKey
+  jwtExpirationInMs: 60000
